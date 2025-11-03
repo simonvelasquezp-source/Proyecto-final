@@ -38,5 +38,12 @@ public abstract class Transaccion {
     public void setDescripcion(String descripcion){
         this.descripcion=descripcion;
     }
-    
+     @Override
+    public String toString(){
+        return "=== Transaccion === "+ "Monto:"+ monto+
+                                    "Fecha:"+ fecha+
+                                    "Cliente:"+ cliente+
+                                    "Descripcion:"+ descripcion;
+    }
 }
+
