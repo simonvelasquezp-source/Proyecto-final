@@ -7,15 +7,15 @@ public abstract class Usuario {
     protected String contraseña;
     protected String telefono;
     protected String tipoUsuario;
-
-    public Usuario(String nombre, String cedula, String correo, String contraseña, String telefono, String tipoUsuario){
+    protected ArrayList <Transaccion> transacciones;
+    public Usuario(String nombre, String cedula, String correo, String contraseña, String telefono, String tipoUsuario, Transaccion transacciones){
         this.nombre=nombre;
         this.cedula=cedula;
         this.correo=correo;
         this.contraseña=contraseña;
         this.telefono=telefono;
         this.tipoUsuario=tipoUsuario;
-
+        this.transacciones= new ArrayList<>();
     }
 
     public String getNombre(){
@@ -56,3 +56,4 @@ public abstract class Usuario {
     }
     
 }
+
