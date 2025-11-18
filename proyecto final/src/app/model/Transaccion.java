@@ -38,6 +38,8 @@ public abstract class Transaccion {
     public void setDescripcion(String descripcion){
         this.descripcion=descripcion;
     }
+    public abstract void aplicarTransaccion(CuentaBase cuenta);
+    
      @Override
     public String toString(){
         return "=== Transaccion === "+ "Monto:"+ monto+
@@ -46,4 +48,5 @@ public abstract class Transaccion {
                                     "Descripcion:"+ descripcion;
     }
 }
+
 
