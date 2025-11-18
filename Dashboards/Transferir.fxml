@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="15" alignment="CENTER" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controllers.TransferirController">
+
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <Label text="Transferir" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+
+    <Label fx:id="lblMonederoOrigen"/>
+
+    <Label text="Monto a transferir:"/>
+    <TextField fx:id="txtMonto"/>
+
+    <Label text="Monedero destino:"/>
+    <ComboBox fx:id="comboDestino"/>
+
+    <Button text="Confirmar Transferencia" fx:id="btnConfirmar"/>
+
+    <Label fx:id="lblMensaje" style="-fx-text-fill: blue;"/>
+
+</VBox>
+
+
+
+
+

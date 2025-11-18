@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="15" alignment="CENTER" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controllers.RetirarController">
+
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <Label text="Retirar" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+
+    <Label fx:id="lblMonedero"/>
+
+    <Label text="Monto a retirar:"/>
+    <TextField fx:id="txtMonto"/>
+
+    <Button text="Confirmar Retiro" fx:id="btnConfirmar"/>
+
+    <Label fx:id="lblMensaje" style="-fx-text-fill: red;"/>
+
+</VBox>
+
+
+
+

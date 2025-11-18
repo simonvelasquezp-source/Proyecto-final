@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="15" alignment="CENTER" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controllers.DepositarController">
+
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <Label text="Depositar" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+
+    <Label fx:id="lblMonedero"/>
+
+    <Label text="Monto a depositar:"/>
+    <TextField fx:id="txtMonto"/>
+
+    <Button text="Confirmar Depósito" fx:id="btnConfirmar"/>
+
+    <Label fx:id="lblMensaje" style="-fx-text-fill: green;"/>
+
+</VBox>
+
+
+
+
+
+

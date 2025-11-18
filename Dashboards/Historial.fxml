@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controllers.HistorialController">
+
+    <top>
+        <Label text="Historial de Transacciones"
+               style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-padding: 10;" />
+    </top>
+
+    <center>
+        <ListView fx:id="listaHistorial"
+                  style="-fx-padding: 10; -fx-font-size: 14;" />
+    </center>
+
+    <bottom>
+        <Button text="Cerrar"
+                onAction="#cerrarVentana"
+                style="-fx-padding: 10; -fx-font-size: 16; -fx-background-color: #ccc;"
+                BorderPane.alignment="CENTER" />
+    </bottom>
+
+</BorderPane>
+
+
