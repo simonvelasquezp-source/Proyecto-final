@@ -7,9 +7,11 @@ public  class Deposito extends Transaccion {
  @Override
     public void aplicarTransaccion(CuentaBase cuenta){
         cuenta.setSaldo(cuenta.getSaldo()+getMonto());
+        Puntos.asignarPuntos((Cliente) cuenta.getPropietario(), this);
         System.out.println("Desposito de:"+ getMonto()+ "realizado. Nuevo saldo de:"+ cuenta.getSaldo());
     }
     
     
 }
+
 
